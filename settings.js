@@ -9,6 +9,11 @@ app.set("port", process.env.PORT || 3000);
 // Middlewares
 
 // routes
+const mainRoutes = require("./routes/main");
+app.use('/', mainRoutes);
+
+const aboutRoutes = require("./routes/about");
+app.use('/about', aboutRoutes);
 
 // Static files
 app.use(express.static(publicPath));
