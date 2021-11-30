@@ -3,7 +3,7 @@ const router = Router();
 
 const mainController = require('../controllers/mainController');
 
-// Routes
+// Rutas
 router.get('/', mainController.cargarPagina);
 
 module.exports = router;
